@@ -115,7 +115,7 @@ livehosts() {
 
   echo ""
   echo "[+] Capturing screenshots of live domains (aquatone_out/)"
-  cat $reportPath/url_live.txt | aquatone --out $reportPath/aquatone_out
+  cat $reportPath/url_live.txt | aquatone --chrome-path /snap/bin/chromium --out $reportPath/aquatone_out
 }
 
 
