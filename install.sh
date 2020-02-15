@@ -3,13 +3,13 @@
 apt update && apt upgrade -y && apt dist-upgrade -y && apt autoremove -y
 
 apt update
-apt install -y fail2ban openvpn git build-essential python-setuptools golang nmap jq python-pip
+apt install -y fail2ban openvpn git build-essential python-setuptools golang nmap jq python-pip iftop
 
 snap install chromium
 
 mkdir ~/tools
 cd ~/tools
-github.com/michenriksen/aquatone
+go get clone https://github.com/michenriksen/aquatone
 
 git clone https://github.com/aboul3la/Sublist3r.git
 cd Sublist3r
@@ -35,3 +35,5 @@ echo PATH=~/go/bin:$PATH >> ~/.bashrc
 # remove special chars from jhaddix dns wordlist
 cd ~/tools/SecLists/Discovery/DNS/
 cat dns-Jhaddix.txt | head -n -14 > clean-jhaddix-dns.txt
+
+source ~/.bashrc
