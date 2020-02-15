@@ -12,7 +12,7 @@ systemctl enable fail2ban
 
 mkdir ~/tools
 cd ~/tools
-go get -u https://github.com/michenriksen/aquatone
+go get -u github.com/michenriksen/aquatone
 
 git clone https://github.com/aboul3la/Sublist3r.git
 cd Sublist3r
