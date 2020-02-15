@@ -7,6 +7,9 @@ apt install -y fail2ban openvpn git build-essential python-setuptools golang nma
 
 snap install chromium
 
+systemctl start fail2ban
+systemctl enable fail2ban
+
 mkdir ~/tools
 cd ~/tools
 go get clone https://github.com/michenriksen/aquatone
