@@ -169,8 +169,6 @@ startTime=$(date +"%Y-%m-%d %H:%M:%S")
 path=$(pwd)
 reportBase="$path/recon_out/$domain"
 reportPath="$path/recon_out/$domain/$today/"
-#reportBase="recon_out/goodrx.com"
-#reportPath="recon_out/goodrx.com/2020-02-13-23-22"
 main $domain
 finishTime=$(date +"%Y-%m-%d %H:%M:%S")
 echo "Start Time:  $startTime"
