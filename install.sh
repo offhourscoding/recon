@@ -1,14 +1,22 @@
 #!/bin/bash
 
-apt update && apt upgrade -y && apt dist-upgrade -y && apt autoremove -y
+sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove -y
 
-apt update
-apt install -y fail2ban openvpn git build-essentia python-setuptools golang nmap jq python-pip iftop
+sudo apt update
+sudo apt install -y fail2ban openvpn git build-essential python-setuptools golang nmap jq iftop
 
-snap install chromium
+# Enable python2 for ubuntu 20.04
+sudo add-apt-repository universe
+sudo apt update
+sudo apt install python2
+curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py
+sudo python2 get-pip.py
 
-systemctl start fail2ban
-systemctl enable fail2ban
+
+sudo snap install chromium
+
+sudo systemctl start fail2ban
+sudo systemctl enable fail2ban
 
 mkdir ~/tools
 cd ~/tools
