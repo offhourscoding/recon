@@ -3,15 +3,7 @@
 sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove -y
 
 sudo apt update
-sudo apt install -y fail2ban openvpn git build-essential python-setuptools golang nmap jq iftop
-
-# Enable python2 for ubuntu 20.04
-sudo add-apt-repository universe
-sudo apt update
-sudo apt install python2
-curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py
-sudo python2 get-pip.py
-
+sudo apt install -y fail2ban openvpn git build-essential python-setuptools golang nmap jq iftop python3-pip python-is-python3
 
 sudo snap install chromium
 
