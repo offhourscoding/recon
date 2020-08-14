@@ -3,7 +3,7 @@
 apt update && apt upgrade -y && apt dist-upgrade -y && apt autoremove -y
 
 apt update
-apt install -y fail2ban openvpn git build-essential python-setuptools golang nmap jq python-pip iftop
+apt install -y fail2ban openvpn git build-essentia python-setuptools golang nmap jq python-pip iftop
 
 snap install chromium
 
@@ -28,6 +28,8 @@ git clone https://github.com/robertdavidgraham/masscan.git
 cd masscan
 make
 cd ../
+
+git clone https://github.com/nahamsec/lazyrecon.git
 
 git clone https://github.com/danielmiessler/SecLists.git
 
